@@ -6,12 +6,12 @@ const jogadorRoutes = Router()
 
 const mealsController = new JogadorController()
 
-jogadorRoutes.post("/create-meal", mealsController.create);
+jogadorRoutes.post("/create-jogador", mealsController.create);
 
-jogadorRoutes.put("/edit-meal/:id", mealsController.update);
+jogadorRoutes.put("/edit-jogador/:id", mealsController.update);
 
-jogadorRoutes.delete("/remove-meal/:id", mealsController.delete);
+jogadorRoutes.delete("/remove-jogador/:id", mealsController.delete);
 
-jogadorRoutes.get("/find-meal/:id",mealsController.findById);
+jogadorRoutes.get("/find-jogador/:id",mealsController.findById);
 
 module.exports = jogadorRoutes
