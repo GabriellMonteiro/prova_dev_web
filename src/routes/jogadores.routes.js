@@ -4,14 +4,14 @@ const JogadorController = require("../controllers/JogadorController")
 
 const jogadorRoutes = Router()
 
-const mealsController = new JogadorController()
+const jogadorController = new JogadorController()
 
-jogadorRoutes.post("/create-jogador", mealsController.create);
+jogadorRoutes.post("/create-jogador", jogadorController.create);
 
-jogadorRoutes.put("/edit-jogador/:id", mealsController.update);
+jogadorRoutes.put("/edit-jogador/:id", jogadorController.update);
 
-jogadorRoutes.delete("/remove-jogador/:id", mealsController.delete);
+jogadorRoutes.delete("/remove-jogador/:id", jogadorController.delete);
 
-jogadorRoutes.get("/find-jogador/:id",mealsController.findById);
+jogadorRoutes.get("/find-jogador/:id",jogadorController.findById);
 
 module.exports = jogadorRoutes
